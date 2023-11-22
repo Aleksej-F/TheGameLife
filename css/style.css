@@ -1,0 +1,27 @@
+#app{
+  display: flex;
+}
+#panel{
+  height: 100%;
+  width: 100px;
+}
+.pole{
+  display: grid;
+  gap: 2px;
+  background-color: antiquewhite;
+  margin: auto;
+}
+
+.cell{
+ height: 20px;
+ width: 20px;
+ border-radius: 10px;
+ background-color: aquamarine;
+}
+.cell:hover{
+  cursor: pointer;
+  outline: 1px solid #666;
+}
+.select{
+  background-color: brown;
+}
