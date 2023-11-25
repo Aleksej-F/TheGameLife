@@ -151,7 +151,7 @@ class Pole {
   }
   async start(){
     console.log("start")
-    await this.toggleVisibleLoader()
+    // await this.toggleVisibleLoader()
     await this.fieldTaversal()
     // await this.toggleVisibleLoader()
   }
