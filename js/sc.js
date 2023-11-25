@@ -127,8 +127,6 @@ class Pole {
     loader.classList.add('loadervisible')
   }
   async generateState(){
-    const loader = document.querySelector(`#loader`)
-    loader.classList.toggle('loadervisible')
     console.log("генер")
     const cellTotal = Math.floor(Math.random() * (this.width * this.height - 1) )
     this.generate()
@@ -145,15 +143,14 @@ class Pole {
       const cell = document.querySelector(`#h${h}w${w}`)
       cell.classList.add('select');
     }
-    loader.classList.remove('loadervisible')
     alert('поле сгенерировано')
     
   }
   async start(){
     console.log("start")
-    // await this.toggleVisibleLoader()
+    
     await this.fieldTaversal()
-    // await this.toggleVisibleLoader()
+   
   }
   select({w,h}){
     this.pole[h][w] = this.pole[h][w] === 0 ? 1: 0
