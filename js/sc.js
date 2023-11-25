@@ -86,7 +86,7 @@ class Pole {
     app.append(div)
 
     app.insertAdjacentHTML('afterbegin', this.addPanel())
-    app.insertAdjacentHTML('afterbegin', this.addLoader())
+    // app.insertAdjacentHTML('afterbegin', this.addLoader())
     document.addEventListener('keydown', function(event) {
       console.log (event.keyCode)
       if (event.keyCode == 13 ) {
