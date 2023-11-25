@@ -13,10 +13,11 @@
 }
 
 .cell{
- height: 20px;
- width: 20px;
+ height: 30px;
+ width: 30px;
  border-radius: 10px;
  background-color: aquamarine;
+ text-align: center;
 }
 .cell:hover{
   cursor: pointer;
@@ -24,4 +25,45 @@
 }
 .select{
   background-color: brown;
+}
+.taversal{
+  background-color: rgb(34, 98, 158);
+  
+}
+
+.loader-cont{
+  position: relative;
+  height: 1px;
+  z-index: 230;
+  display: none;
+}
+.loader-container{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(101, 112, 112, 0.432);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px dashed teal;
+    animation: rotate 1s infinite linear;
+}
+@keyframes rotate {
+  from {
+      transform: rotate(0deg) scale(1);
+  }
+  50%{
+    transform: rotate(360deg) scale(1.4);
+  }
+  to {
+      transform: rotate(720deg) scale(1);
+  }
+}
+.loadervisible{
+  display: block
 }
